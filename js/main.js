@@ -1,3 +1,5 @@
+
+
 alert("Bienvenido! Gana eligiendo la operación adecuada!");
 
 alert("¿Estas listo para comenzar?");
@@ -19,7 +21,8 @@ alert("Tu edad es " + edad);
 let barco1 = parseInt(prompt("Ingrese el número del primer barco entre 1 y 10"))
 let barco2 = parseInt(prompt("Ingrese el número del segundo barco entre 1 y 10"))
 
-let combinacion = prompt("Seleccione una combinación que te haga ganar: \n1. Alternativa 1 \n2. Alternativa 2 \n3. Alternativa 3 \n4. Alternativa 4 ");
+let combinacion = prompt("Seleccione una combinación que te haga ganar: \n1. 1 \n2. 2 \n3. 3 \n4. 4 ");
+
 
 function calcular(barco1, barco2, combinacion) {
     switch (combinacion) {
@@ -36,11 +39,13 @@ function calcular(barco1, barco2, combinacion) {
     }
 }
 
-let resultado = calcular(barco1, barco1, combinacion);
+let resultado = calcular(barco1, barco2, combinacion);
 console.log(resultado);
 
-if(resultado => 50) {
+let valorcorte = 50
+if(resultado > valorcorte) {
     alert ("Lo lograste elegiste una operación ganadora")
 } else {
     alert("perdiste, la operación no es la adecuada")
 }
+
